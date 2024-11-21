@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: 'http://localhost:5000/api/posts' 
+    baseURL: 'https://crud-application-backend-dvd1.onrender.com/api/posts' 
 });
 
 export const fetchPosts = () => API.get('/');
