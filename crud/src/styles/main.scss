@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900");
+
+// styles.scss
+$primary-color: #1c2e78;
+$secondary-color: #4b5dff;
+
+body {
+  font-family: 'Arial, sans-serif';
+  color: #fff;
+
+  h1 {
+    color: $primary-color;
+    font-size: 3rem;
+  }
+
+  .btns {
+    background-color: $secondary-color;
+    color: #fff;
+    border-radius: 0.2rem;
+
+    &:hover {
+      color: #fff;
+      background-color: lighten($secondary-color, 10%);
+      border: $secondary-color;
+    }
+  }
+
+  .allbtns{
+    border-radius: 0.2rem;
+    color: #fff;
+  }
+  .card{
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+}
