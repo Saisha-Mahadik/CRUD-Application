@@ -28,7 +28,7 @@ const PostDetails = () => {
         <Container>
             <Card className="my-4">
                 {post.image && (
-                    <Card.Img variant="top" src={`http://localhost:5000/${post.image}`} alt={post.title} />
+                    <Card.Img variant="top" src={`https://crud-application-backend-dvd1.onrender.com/${post.image}`} alt={post.title} />
                 )}
                 <Card.Body>
                     <Card.Title>{post.title}</Card.Title>
