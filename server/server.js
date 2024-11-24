@@ -5,7 +5,7 @@ const { connectedToMongoDB } = require('./src/configration/dbConfig');
 const postRoutes = require('./src/routes/postRoutes');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -14,8 +14,8 @@ app.use('/api/posts', postRoutes);
 
 connectedToMongoDB();
 
-app.listen(PORT, () => {
-    console.log(`Server is running on :${PORT}`);
+app.listen(port, () => {
+    console.log(`Server is running on :${port}`);
 });
 
 
