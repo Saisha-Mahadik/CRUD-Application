@@ -14,9 +14,9 @@ app.use('/api/posts', postRoutes);
 
 connectedToMongoDB();
 
-// app.listen(port, () => {
-//     console.log(`Server is running on :${port}`);
-// });
+app.listen(port, () => {
+    console.log(`Server is running on :${port}`);
+});
 
 
 const multer = require('multer');
